@@ -7,5 +7,21 @@ $(document).ready(function() {
     const info = $("select#info").val();
     const garbage = $("select#garbage").val();
     const color = $("select#color").val();
-  })
-})
+
+    if (system === "MacOs" && application === "Mobile") {
+      $('#swift').show();
+    } else if (system === "Linux" && game === "Yes") {
+      $('#python').show();
+    } else if (system === "MacOs" && garbage === "Yes") {
+      $('#ruby').show();
+    } else if (sytem === "Windows" && application === "Web") {
+      $('#csharp').show();
+    } else if (info === "Very Sensitive" && game === "No" && system === "MacOS" || system === "Windows") {
+      $('#rust').show();
+    } else if (info === "Sensitive" || info === "Very Sensitive" && garbage === "Yes" && application === "Web") {
+      $('#go').show();
+    } else {
+      $('#javascript').show();
+    }
+  });
+});
