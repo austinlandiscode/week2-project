@@ -13,8 +13,6 @@ $(document).ready(function() {
 
     if (system === "MacOs" && application === "Mobile") {
       $('#swift').show();
-    } else if (system === "Linux" || system === "MacOs" || system === "Windows" && game === "Yes" && color === "Green") {
-      $('#python').show();
     } else if (system === "MacOs" && garbage === "Yes" && color === "Red") {
       $('#ruby').show();
     } else if (system === "MacOS" && garbage === "Yes" && color === "Yellow") {
