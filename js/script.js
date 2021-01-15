@@ -16,12 +16,12 @@ $(document).ready(function() {
       $('#ruby').show();
     } else if (system === "MacOS" && garbage === "Yes" && color === "Yellow") {
       $('#javascript').show();
-    } else if (system === "Windows" && application === "Web") {
+    } else if (system === "Windows" && application === "Web" && info === "Not Sensitive" || info === "Sensitive") {
       $('#csharp').show();
-    } else if (info === "Very Sensitive" && game === "No" && system === "MacOS" || system === "Windows") {
-      $('#rust').show();
     } else if (info === "Sensitive" || info === "Very Sensitive" && garbage === "Yes" && application === "Web") {
       $('#go').show();
+    } else if (info === "Very Sensitive" && game === "No" && system === "MacOS" || system === "Windows") {
+      $('#rust').show();
     } else if (game === "Yes") {
       $('#python').show();
     } else {
