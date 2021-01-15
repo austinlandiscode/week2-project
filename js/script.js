@@ -10,16 +10,20 @@ $(document).ready(function() {
 
     if (system === "MacOs" && application === "Mobile") {
       $('#swift').show();
-    } else if (system === "Linux" && game === "Yes") {
+    } else if (system === "Linux" || system === "MacOs" && game === "Yes" && color === "Green") {
       $('#python').show();
-    } else if (system === "MacOs" && garbage === "Yes") {
+    } else if (system === "MacOs" && garbage === "Yes" && color === "Red") {
       $('#ruby').show();
-    } else if (sytem === "Windows" && application === "Web") {
+    } else if (system === "MacOS" && garbage === "Yes" && color === "Yellow") {
+      $('#javascript').show();
+    } else if (system === "Windows" && application === "Web") {
       $('#csharp').show();
     } else if (info === "Very Sensitive" && game === "No" && system === "MacOS" || system === "Windows") {
       $('#rust').show();
     } else if (info === "Sensitive" || info === "Very Sensitive" && garbage === "Yes" && application === "Web") {
       $('#go').show();
+    } else if (game === "Yes") {
+      $('#python').show();
     } else {
       $('#javascript').show();
     }
