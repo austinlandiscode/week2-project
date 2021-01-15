@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("form#language-suggest").submit(function(event) {
     event.preventDefault();
+    const name = $("input#user-name").val
     const system = $("select#system").val();
     const application = $("select#application").val();
     const game = $("select#game").val();
@@ -8,9 +9,11 @@ $(document).ready(function() {
     const garbage = $("select#garbage").val();
     const color = $("select#color").val();
 
+    $(".name").text(name);
+
     if (system === "MacOs" && application === "Mobile") {
       $('#swift').show();
-    } else if (system === "Linux" || system === "MacOs" && game === "Yes" && color === "Green") {
+    } else if (system === "Linux" || system === "MacOs" || system === "Windows" && game === "Yes" && color === "Green") {
       $('#python').show();
     } else if (system === "MacOs" && garbage === "Yes" && color === "Red") {
       $('#ruby').show();
