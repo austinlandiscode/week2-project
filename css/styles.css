@@ -8,7 +8,8 @@ h1 {
   color: white;
   text-align: center;
   font-size: 70px;
+  text-shadow: #343a40 0px 0px 3px;
 }
 h3 {
-  color: #292b2c;
+  color: #343a40;
 }
