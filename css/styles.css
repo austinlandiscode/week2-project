@@ -54,7 +54,7 @@ nav {
   border-radius: 5px;
 }
 @media only screen and (max-width: 1050px) {
-  .product-device, .product-device-2, .product-device::before, .box-shadow, .d-none, .d-md-block {
+  .product-device, .product-device-2, .product-device::before, .box-shadow, .d-md-block {
     display: none !important;
   }
 }
