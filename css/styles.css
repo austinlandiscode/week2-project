@@ -5,14 +5,56 @@ body {
   background-color: rgb(156, 233, 156);
 }
 h1 {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 70px;
-  text-shadow: #343a40 0px 0px 3px;
 }
 h3 {
   color: #343a40;
 }
 img {
   max-width: 60%;
+}
+nav {
+    background-color: #212529;
+ }
+ a {
+   color: #999999;
+ }
+ a:hover {
+   color: white;
+ }
+ .product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+ .product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+@media only screen and (max-width: 1050px) {
+  .product-device, .product-device-2, .product-device::before, .box-shadow, .d-none, .d-md-block {
+    display: none !important;
+  }
 }
