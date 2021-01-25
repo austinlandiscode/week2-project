@@ -22,9 +22,7 @@ This web application is designed to provide the user with a suggestion of which 
 * Download ZIP.
 * Move the ZIPPED folder to your desktop.
 * Drag folder into a code editor
-* To view in browser, copy path of index.html into your preferred browser.
-OR
-* https://austinlandiscode.github.io/week2-project/
+* To view in browser, https://austinlandiscode.github.io/week2-project/
 * All these commands could also be performed in a terminal.
 
 ## Known Bugs
