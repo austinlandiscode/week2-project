@@ -18,18 +18,13 @@ This web application is designed to provide the user with a suggestion of which 
 
 ## Setup/Installation Requirements
 
-* Click on branches
-* Choose the gh-pages branch
-* Under environments: choose github-pages
-* Then click view deployment
-
-OR
-
 * Click on the green download code button.
 * Download ZIP.
 * Move the ZIPPED folder to your desktop.
 * Drag folder into a code editor
 * To view in browser, copy path of index.html into your preferred browser.
+OR
+* https://austinlandiscode.github.io/week2-project/
 * All these commands could also be performed in a terminal.
 
 ## Known Bugs
